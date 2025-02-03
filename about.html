@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" type="image/png" href="/Iogo/Foresight.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#05050a",
+              background: "#fbfbfe",
+              primary: "#092f3c",
+              secondary: "#f39530",
+              secondary2: "#fae7d5",
+              accent: "#ffeace",
+            },
+          },
+        },
+        plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-stroke': {
+          '-webkit-text-stroke': '2px #000',
+          'text-stroke': '2px #000',
+        },
+      });
+    },
+  ],
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
+    <main class="pt-16">
+      <!-- section one -->
+      <section>
+        <div
+          class="bg-secondary2 h-[30vh] lg:h-[35vh] flex justify-center items-center relative"
+        >
+          <h1 class="text-text text-4xl md:text-6xl font-bold font-">
+            About <span class="text-transparent text-stroke">ASAM</span> Foundation
+          </h1>
+          <img
+            src="./logo/asamfirst.png"
+            alt=""
+            width="150px"
+            class="bg-red- absolute bottom-0"
+          />
+        </div>
+        <!-- mission and vision -->
+        <div class="flex flex-col md:flex-row gap-5 py-10 md:w-[90%] mx-auto">
+          <!-- mission -->
+          <div
+            class="flex items-start bg-white p-6 rounded-lg shadow-lg md:w-[50%] gap-3"
+          >
+            <!-- Number Box -->
+            <div
+              class="py-4 px-5 flex justify-center items-center bg-black text-white text-2xl font-bold rounded"
+            >
+              1
+            </div>
+
+            <!-- Text Content -->
+            <div>
+              <h2 class="text-xl font-bold">Our Mission</h2>
+              <p class="mt-2">
+                To provide support and empowerment to two main groups:
+                <ul class="list-disc list-inside">
+                  <li>Church of Conquerors International Ghana members</li>
+                  <li>Community members (non-church affiliates)</li>
+                </ul>
+                Enhancing their educational, economic, and social well-being.
+              </p>
+            </div>
+          </div>
+          <!-- vision -->
+          <div
+            class="flex items-start bg-white p-6 rounded-lg shadow-lg  md:w-[50%] gap-3"
+          >
+            <!-- Number Box -->
+            <div
+              class="py-4 px-5 flex justify-center items-center bg-black text-white text-2xl font-bold rounded"
+            >
+              2
+            </div>
+
+            <!-- Text Content -->
+            <div>
+              <h2 class="text-xl font-bold">Our Vision</h2>
+              <p class="mt-2">
+                To become a leading empowerment foundation, transforming lives through education, entrepreneurship, and skills development, and fostering a community of self-sustaining individuals
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footerl -->
+    <footer id="footer"></footer>
+    <script src="./scriptFiles/script.js"></script>
+  </body>
+</html>

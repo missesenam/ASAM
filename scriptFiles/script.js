@@ -3,7 +3,7 @@ const navbarElement = document.getElementById("navbar");
 
 // Set the innerHTML of the element
 navbarElement.innerHTML = `
- <div class="navbar md:w-[80%] mx-auto bg-background relative">
+ <div class="navbar md:w-[80%] mx-auto  relative">
   <div class="flex items-center justify-between w-full">
     <!-- Logo -->
     <div class="flex-1">
@@ -16,14 +16,15 @@ navbarElement.innerHTML = `
     <div class="flex-none sm:hidden">
       <button id="menu-toggle" class="p-2 focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
+
       </button>
     </div>
 
     <!-- Menu Items -->
     <div id="menu" class="flex-none hidden sm:block opacity-70 backdrop-blur-3xl">
-      <ul class="menu menu-horizontal px-1">
+      <ul class="menu menu-horizontal px-1 text-primary navliknks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="application.html">Apllication</a></li>
@@ -36,7 +37,7 @@ navbarElement.innerHTML = `
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full justify-end backdrop-blur-lg  custom-backdrop z-10">
-    <ul class="menu p-2">
+    <ul class="menu p-2 navliknks">
       <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="application.html">Apllication</a></li>

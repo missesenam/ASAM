@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+.navliknks li a:hover {
+  background-color: transparent;
+  color: #f39530;
+}
