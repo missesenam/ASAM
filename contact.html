@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/Iogo/Foresight.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // taosd
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#05050a",
+              background: "#fbfbfe",
+              primary: "#092f3c",
+              secondary: "#f39530",
+              secondary2: "#fae7d5",
+              accent: "#ffeace",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
+    <main class="pt-[100px]">
+      <!--  -->
+      <section class="flex justify-center items-center min-h-screen p-6">
+        <div class="px-4 lg:w-[70%]">
+          <!-- Contact Info Cards -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6"
+            id="contact-container"
+          ></div>
+
+          <!-- Contact Form -->
+          <div class="bg-secondary2 p-6 rounded-lg shadow-md">
+            <h2 class="text-center text-2xl font-bold text-primary mb-4">
+              Contact Us
+            </h2>
+
+            <form action="#" method="POST" class="space-y-4">
+              <input
+                type="text"
+                placeholder="Enter your Name"
+                class="w-full p-3 border border-gray-300 rounded-md focus:ring focus:ring-blue-500"
+              />
+              <input
+                type="email"
+                placeholder="Enter a valid email address"
+                class="w-full p-3 border border-gray-300 rounded-md focus:ring focus:ring-blue-500"
+              />
+              <textarea
+                placeholder="Your Message"
+                class="w-full p-3 border border-gray-300 rounded-md focus:ring focus:ring-blue-500 h-32"
+              ></textarea>
+              <button
+                type="submit"
+                class="w-full bg-secondary text-white py-3 rounded-md hover:shadow-xl transition"
+              >
+                SUBMIT
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footerl -->
+    <footer id="footer"></footer>
+    <script src="./scriptFiles/script.js"></script>
+    <script src="./scriptFiles/contact.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ const navbarElement = document.getElementById("navbar");
 
 // Set the innerHTML of the element
 navbarElement.innerHTML = `
- <div class="navbar md:w-[80%] mx-auto  relative">
+ <div class="navbar h-[100px] md:w-[80%] mx-auto  relative">
   <div class="flex items-center justify-between w-full">
     <!-- Logo -->
     <div class="flex-1">
@@ -29,7 +29,7 @@ navbarElement.innerHTML = `
         <li><a href="about.html">About</a></li>
         <li><a href="application.html">Apllication</a></li>
         <li><a href="funding.html">Funding</a></li>
-        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="FAQs.html">FAQs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -42,7 +42,7 @@ navbarElement.innerHTML = `
         <li><a href="about.html">About</a></li>
         <li><a href="application.html">Apllication</a></li>
         <li><a href="funding.html">Funding</a></li>
-        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="FAQs.html">FAQs</a></li>
         <li><a href="contact.html">Contact</a></li>  
     </ul>
   </div>

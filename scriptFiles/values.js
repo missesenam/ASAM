@@ -25,15 +25,15 @@ const values = [
     image: "./img/community.jpg",
   },
   {
-    title: "Sustainability",
-    description: "Fostering self-sufficiency and long-term impact.",
-    image: "https://source.unsplash.com/600x400/?sustainability,green",
-  },
-  {
     title: "Collaboration",
     description: "Partnering with stakeholders for greater effectiveness.",
-    image: "https://source.unsplash.com/600x400/?teamwork,partnership",
+    image: "./img/teamwork,partnership.jpg",
   },
+  // {
+  //   title: "Sustainability",
+  //   description: "Fostering self-sufficiency and long-term impact.",
+  //   image: "https://source.unsplash.com/600x400/?sustainability,green",
+  // },
 ];
 
 function renderCards() {

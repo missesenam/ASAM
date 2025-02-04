@@ -97,21 +97,52 @@ const faqs = [
     ],
   },
 ];
+const faqContainer = document.getElementById("faq-container");
 
-<div className="space-y-6">
-  {faqs.map((section, index) => (
-    <div key={index}>
-      <h2 className="text-xl font-bold text-primary mb-3">
-        {section.category}
-      </h2>
-      <ul className="space-y-2 list-disc pl-5">
-        {section.items.map((faq, i) => (
-          <li key={i}>
-            <strong>{faq.question}</strong> <br />
-            {faq.answer}
-          </li>
-        ))}
-      </ul>
-    </div>
-  ))}
-</div>;
+faqs.forEach((section) => {
+  // Create section wrapper
+  const sectionDiv = document.createElement("div");
+
+  // Create and append category heading
+  const heading = document.createElement("h2");
+  heading.className =
+    "text-2xl lg:text-3xl font-bold text-primary my-7 font-serif";
+  heading.textContent = section.category;
+  sectionDiv.appendChild(heading);
+
+  // Create and append list
+  section.items.forEach((faq) => {
+    // Create collapse wrapper
+    const collapseDiv = document.createElement("div");
+    collapseDiv.className = "collapse collapse-plus border border-accent mb-3";
+    collapseDiv.setAttribute("tabindex", "0");
+
+    // Create question (collapse title)
+    const questionDiv = document.createElement("div");
+    questionDiv.className = "collapse-title text-xl font-medium bg-secondary";
+    questionDiv.textContent = faq.question;
+
+    // Create answer (collapse content)
+    const answerDiv = document.createElement("div");
+    answerDiv.className = "collapse-content bg-background";
+    const answerText = document.createElement("p");
+    answerText.className = "py-3";
+    answerText.textContent = faq.answer;
+    answerDiv.appendChild(answerText);
+
+    collapseDiv.appendChild(questionDiv);
+    collapseDiv.appendChild(answerDiv);
+    sectionDiv.appendChild(collapseDiv);
+  });
+  faqContainer.appendChild(sectionDiv);
+});
+
+// <div
+//   tabindex="0"
+//   class="collapse collapse-plus border-base-300 bg-base-200 border"
+// >
+//   <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+//   <div class="collapse-content">
+//     <p>tabindex="0" attribute is necessary to make the div focusable</p>
+//   </div>
+// </div>;
