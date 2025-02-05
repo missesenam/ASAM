@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/Iogo/Foresight.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#05050a",
+              background: "#fbfbfe",
+              primary: "#092f3c",
+              secondary: "#f39530",
+              secondary2: "#cbd3d7",
+              accent: "#ffeace",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
+    <main class="pt-[100px]">
+      <section class="mt-10">
+        <div
+          class="relative flex items-center justify-start px-5 lg:w-[80%] mx-auto"
+        >
+          <h1
+            class="absolute text-[6rem] lg:text-[8rem] font-bold text-secondary2 opacity-50 uppercase"
+          >
+            funding
+          </h1>
+          <p class="relative text-2xl lg:text-4xl font-light">
+            <span class="font-bold text-black">Sources</span> of funding
+          </p>
+        </div>
+        <!-- photo -->
+        <div
+          class="w-full max-w-lg lg:max-w-[80%] lg:max-h-[500px] mx-auto mt-20 bg-red-900 overflow-hidden"
+        >
+          <img src="./img/fewchildren.jpg" alt="" />
+        </div>
+        <div class="text-center">
+          <h2
+            class="text-2xl lg:text-4xl md:text-3xl font-bold text-primary mt-10"
+          >
+            Our Funding Sources
+          </h2>
+          <div class="flex items-center justify-center mt-2">
+            <span class="w-16 h-px bg-gray-300"></span>
+            <img
+              src="./logo/asam.png"
+              alt="icon"
+              class="mx-2 h-14 opacity-50"
+            />
+            <span class="w-16 h-px bg-gray-300"></span>
+          </div>
+          <p class="lg:w-[50%] mx-auto">
+            We sustain our mission through donations, corporate sponsorships,
+            government grants, and strategic partnerships. Fundraising events
+            and initiatives further support our programs. Every contribution
+            helps us create a lasting impact.
+          </p>
+        </div>
+      </section>
+      <!-- funding -->
+      <section>
+        <div
+          class="bg-[url('./img/children.jpg')] bg-cover bg-center bg-no-repeat lg:h-[500px] mt-10 flex flex-col lg:flex-row"
+        >
+          <div
+            class="bg-black/50 lg:w-[50%] h-full flex flex-col text-white text-center items-center justify-center p-5"
+          >
+            <h1>Initial Founding Sources</h1>
+            <div class="flex flex-col gap-4" id="funding"></div>
+          </div>
+          <!--  -->
+          <div
+            class="bg-white/20 lg:w-[50%] flex flex-col text-white text-center items-center justify-center border p-5"
+          >
+            <h1>Potential Funding Sources</h1>
+            <div class="flex flex-col gap-4" id="fundingsecond"></div>
+          </div>
+        </div>
+
+        <div>
+          <h1>others sources</h1>
+          <div
+            id="funding-section"
+            class="grid lg:grid-cols-2 lg:w-[60%] mx-auto mt-10 shadow-md"
+          ></div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer"></footer>
+    <script src="./scriptFiles/script.js"></script>
+    <script src="./scriptFiles/fundraising.js"></script>
+    <script src="scriptFiles/ini.js"></script>
+    <script src="./scriptFiles/pot.js"></script>
+  </body>
+</html>
