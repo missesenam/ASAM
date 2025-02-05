@@ -8,7 +8,7 @@ navbarElement.innerHTML = `
     <!-- Logo -->
     <div class="flex-1">
       <a href="index.html" class="text-xl w-[100%] sm:w-auto px-0">
-        <img src="./logo/asam.png" alt="Foresight Logo" class="h-[40px] max-w-full" />
+        <img src="./logo/asam.png" alt="Foresight Logo" class="h-[70px] max-w-full" />
       </a>
     </div>
 
