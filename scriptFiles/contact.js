@@ -25,7 +25,7 @@ const container = document.getElementById("contact-container");
 
 contactInfo.forEach((item) => {
   const card = document.createElement("div");
-  card.className = "bg-accent shadow-md rounded-lg p-4 text-center";
+  card.className = "bg-secondary2 shadow-md rounded-lg p-4 text-center";
 
   card.innerHTML = `
     <div class="text-3xl mb-2">${item.image}</div>

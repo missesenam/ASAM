@@ -2,13 +2,13 @@ const secondfounding = [
   {
     name: "Donations",
     description: "Individual and corporate donations.",
-    icon: '<i class="fa fa-hand-holding-heart text-secondary"></i>', // Represents donations
+    icon: '<i class="fa fa-hand-holding-heart text-secondary"></i>',
   },
   {
     name: "Grants",
     description:
       "Local and international grants from foundations, NGOs, and government agencies.",
-    icon: '<i class="fa fa-gift text-secondary"></i>', // Represents grants or gifts
+    icon: '<i class="fa fa-gift text-secondary"></i>',
   },
   {
     name: "Sponsorships",
@@ -30,12 +30,18 @@ const fundingSecond = document.getElementById("fundingsecond");
 
 secondfounding.forEach((funding) => {
   const sectionDiv = document.createElement("div");
-  sectionDiv.classList.add("p-4", "border", "hover:shadow-2xl", "bg-white/50");
+  sectionDiv.classList.add(
+    "p-4",
+    "border",
+    "border-black/70",
+    "hover:bg-transparent",
+    "bg-black/70"
+  );
 
   sectionDiv.innerHTML = `
         <div class="flex items-center gap-4">
           ${funding.icon}
-          <h3 class="text-xl font-semibold text-text">${funding.name}</h3>
+          <h3 class="text-xl font-semibold text-secondary">${funding.name}</h3>
         </div>
         <p class="mt-2 text-left">
           ${funding.description}
