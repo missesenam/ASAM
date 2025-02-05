@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/logo/asam.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // taosd
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#05050a",
+              background: "#fbfbfe",
+              primary: "#092f3c",
+              secondary: "#f39530",
+              secondary2: "#cbd3d7",
+              accent: "#ffeace",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
+    <main class="pt-[100px]">
+      <section class="flex items-center justify-center bg-primary">
+        <div
+          class="p-6 w-full max-w-5xl text-center"
+        >
+          <h1 class="text-3xl font-bold text-white mb-5">
+            Application Process
+          </h1>
+
+          <div class="grid lg:grid-cols-4 gap-4 items-center">
+            <!-- Step 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+              <div class="text-secondary text-3xl mb-2">
+                <i class="fas fa-globe"></i>
+
+              </div>
+              <h3 class="text-lg font-semibold text-primary">Step 01</h3>
+              <p class="text-sm text-gray-600">
+                Visit the ASAM Foundation website
+                <a href="asamfoundation.org" class="text-secondary hover:text-text">asamfoundation.org</a>
+              </p>
+            </div>
+            <!-- Step 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+              <div class="text-secondary text-3xl mb-2">
+                <i class="fas fa-download"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-primary">Step 02</h3>
+              <p class="text-sm text-gray-600">Download and complete the application form</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+              <div class="text-secondary text-3xl mb-2">
+                <i class="fas fa-list-alt"></i>
+
+              </div>
+              <h3 class="text-lg font-semibold text-primary">Step 03</h3>
+              <p class="text-sm text-gray-600">Submit the form and required documents to the designated email or physical address</p>
+            </div>
+<!-- <div class="text-2xl text-primary">➡</div> -->
+            <!-- Step 4 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+              <div class="text-secondary text-3xl mb-2">
+                <i class="fas fa-comment-dots"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-primary">Step 04</h3>
+              <p class="text-sm text-gray-600">Wait for review and notification of outcome</p>
+            </div>
+
+            
+        </div>
+      </section>
+    </main>
+    <!-- footerl -->
+    <footer id="footer"></footer>
+    <script src="./scriptFiles/script.js"></script>
+  </body>
+</html>
