@@ -16,7 +16,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <script>
-      // taosd
       tailwind.config = {
         theme: {
           extend: {
@@ -36,19 +35,95 @@
   <body>
     <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
     <main class="pt-[100px]">
-      <div
-        class="bg-[url('./img/children.jpg')] bg-cover bg-center bg-no-repeat lg:h-[300px] mt-10 flex flex-col lg:flex-row w-[80%] mx-auto"
-      >
+      <section>
         <div
-          class="bg-black/50 w-full h-full flex flex-col text-white text-center items-center justify-center p-5"
+          class="bg-[url('./img/children.jpg')] bg-cover bg-center bg-no-repeat lg:h-[300px] mt-10 flex flex-col lg:flex-row w-[80%] mx-auto"
         >
-          <h1
-            class="text-4xl lg:text-8xl font-bold text-accent text-center my-6 uppercase"
+          <div
+            class="bg-black/50 w-full h-full flex flex-col text-white text-center items-center justify-center p-5"
           >
-            asam
-          </h1>
+            <h1
+              class="text-4xl lg:text-8xl font-bold text-accent text-center my-6 uppercase"
+            >
+              asam
+            </h1>
+          </div>
         </div>
-      </div>
+        <div class="grid lg:grid-cols-2 mt-32 px-5 lg:w-[90%] mx-auto">
+          <div class="flex flex-col gap-6 max-w-xl mx-auto text-center p-6">
+            <h1 class="text-4xl font-bold text-primary tracking-wide">
+              Legacy Lives On
+            </h1>
+
+            <p class="text-lg leading-relaxed text-gray-700">
+              ASAM Foundation continues Apostle Samuel Aziator's mission to
+              transform lives through education, entrepreneurship, and skills
+              development, empowering individuals to reach their full potential.
+            </p>
+
+            <a
+              href="#"
+              class="text-primary font-medium text-lg inline-block hover:underline hover:text-secondary transition-all"
+            >
+              Read more
+            </a>
+          </div>
+
+          <div>
+            <img src="./img/trophy,achievement.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="mt-32">
+        <h1
+          class="text-4xl lg:text-6xl font-bold text-primary tracking-wide mb-5 text-center"
+        >
+          Principal Activities
+        </h1>
+        <div class="grid lg:grid-cols-2 lg:h-[60vh] lg:w-[95%] mx-auto gap-5">
+          <div class="flex flex-col md:flex-row h-full shadow-2xl px-3 lg:pl-4">
+            <div class="flex flex-col justify-center lg:h-full lg:w-[50%]">
+              <div>
+                <h1
+                  class="text-4xl font-bold text-secondary tracking-wide mb-5"
+                >
+                  Community Outreach
+                </h1>
+                <p
+                  class="border-b-2 border-secondary pb-3 text-lg font-semibold text-primary tracking-wide"
+                >
+                  Partnerships, workshops, seminars, and conferences.
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="lg:w-[50%]">
+              <img src="./img/com.png" alt="" class="h-full object-cover" />
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="flex flex-col md:flex-row h-full shadow-2xl px-3 lg:pl-4">
+            <div class="flex flex-col justify-center lg:h-full lg:w-[50%]">
+              <div>
+                <h1
+                  class="text-4xl font-bold text-secondary tracking-wide mb-5"
+                >
+                  Individual Development
+                </h1>
+                <p
+                  class="border-b-2 border-secondary pb-3 text-lg font-semibold text-primary tracking-wide"
+                >
+                  Capacity building, coaching, and leadership development
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="lg:w-[50%]">
+              <img src="./img/individual.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footerl -->
     <footer id="footer"></footer>
