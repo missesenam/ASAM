@@ -51,7 +51,7 @@ benefits.forEach((benefit) => {
   benefitItem.innerHTML = `
   <div class="flex ${
     benefit.alignRight ? "flex-row-reverse" : ""
-  } items-center gap-6 mb-8">
+  } items-center gap-6 mb-8 pb-2 border-b-2 border-secondary">
 ${benefit.icon}
     <div class="${benefit.alignRight ? "text-right ml-auto" : ""}">
       <h3 class="${benefit.color} text-xl font-semibold">${benefit.title}</h3>
