@@ -28,7 +28,7 @@ navbarElement.innerHTML = `
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="application.html">Apllication</a></li>
-        <li><a href="funding.html">Funding</a></li>
+        <li><a href="donation.html">donation</a></li>
         <li><a href="FAQs.html">FAQs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -68,10 +68,6 @@ footerElement.innerHTML = `<div  class="footer bg-primary text-white p-10 mt-8">
 
         <p>
           &copy; 2025 ASAM-FOUNDATION. All rights reserved.
-          <br />
-          Let
-          <span class="font-bold text-secondary">ASAM-FOUNDATION</span> Ltd be
-          your trusted partner in financial success!
         </p>
       </aside>
       <nav>
