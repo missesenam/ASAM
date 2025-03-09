@@ -45,7 +45,7 @@
             donation
           </h1>
           <p class="relative text-2xl lg:text-4xl font-light">
-            <span class="font-bold text-black">Sources</span> of funding
+            Support <span class="font-bold text-black">ASAM</span> with Laptop
           </p>
         </div>
         <!-- photo -->
@@ -58,7 +58,7 @@
           <h2
             class="text-2xl lg:text-4xl md:text-3xl font-bold text-primary mt-10"
           >
-            Our Funding Sources
+            Empowering Students in Tech with Access to Laptops
           </h2>
           <div class="flex items-center justify-center mt-2">
             <span class="w-16 h-px bg-gray-300"></span>
@@ -70,57 +70,434 @@
             <span class="w-16 h-px bg-gray-300"></span>
           </div>
           <p class="lg:w-[50%] mx-auto">
-            We sustain our mission through donations, corporate sponsorships,
-            government grants, and strategic partnerships. Fundraising events
-            and initiatives further support our programs. Every contribution
-            helps us create a lasting impact.
+            ASAM Foundation recognizes the critical role of technology in
+            today’s world. However, many students lack access to laptops and
+            computers for tech training.
           </p>
         </div>
       </section>
-      <!-- funding -->
+      <!-- funding/#1 -->
       <section>
         <div
           class="bg-[url('./img/children.jpg')] bg-cover bg-center bg-no-repeat lg:h-[500px] mt-10 flex flex-col lg:flex-row"
         >
+          <!-- how can you help -->
           <div
-            class="bg-black/50 lg:w-[50%] h-full flex flex-col text-white text-center items-center justify-center p-5"
+            class="bg-black/50 lg:w-[50%] h-full flex flex-col text-white text-center items-center justify-center p-8"
           >
-            <h1 class="text-3xl font-bold text-accent text-center my-6">
-              Initial Founding Sources
+            <!-- Title -->
+            <h1 class="text-4xl lg:text-5xl font-bold text-accent mb-6">
+              How You Can Help
             </h1>
-            <div class="flex flex-col gap-4" id="funding"></div>
+
+            <!-- Content -->
+            <div class="flex flex-col gap-6 max-w-md">
+              <p class="text-lg leading-relaxed">
+                We are seeking donations of used or new laptops and computers
+                from individuals and organizations. These donations will be
+                refurbished and distributed to students in need.
+              </p>
+
+              <!-- Call-to-Action Button -->
+              <a
+                href="#donate"
+                class="px-8 py-3 bg-secondary text-white font-semibold rounded-full shadow-lg hover:bg-accent/80 transition duration-300"
+              >
+                Donate Now</a
+              >
+            </div>
           </div>
-          <!--  -->
+          <!-- Impact of Your Donation -->
           <div
             class="bg-black/50 lg:w-[50%] flex flex-col text-white text-center items-center justify-center p-5"
           >
-            <h1 class="text-3xl font-bold text-accent text-center my-6">
-              Potential Funding Sources
+            <h1
+              class="text-4xl font-bold text-accent text-center my-6 uppercase"
+            >
+              Impact of Your Donation
             </h1>
 
-            <div class="flex flex-col gap-4" id="fundingsecond"></div>
+            <div class="flex flex-col gap-4 w-full" id="fundingsecond"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Donate a Laptop Form/#2 -->
+      <section class="py-12 bg-gray-50" id="donate">
+        <!-- Heading 1 -->
+        <h1
+          class="text-4xl lg:text-5xl font-bold text-center text-primary mb-8"
+        >
+          Donate a Laptop
+        </h1>
+
+        <!-- Form Container -->
+        <div class="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+          <!-- Heading 2 -->
+          <h2
+            class="text-2xl font-semibold text-secondary mb-6 border-b-2 border-secondary2 pb-2"
+          >
+            For Individuals & Organizations:
+          </h2>
+
+          <!-- Form -->
+          <form class="space-y-6">
+            <!-- Name Field -->
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-accent focus:border-accent focus:outline-primary/50"
+                required
+              />
+            </div>
+
+            <!-- Organization Name Field -->
+            <div>
+              <label
+                for="organization"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Organization Name (if applicable)
+              </label>
+              <input
+                type="text"
+                id="organization"
+                name="organization"
+                placeholder="Enter your organization name"
+                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-accent focus:border-accent focus:outline-primary/50"
+              />
+            </div>
+
+            <!-- Number of Computers/Laptops Field -->
+            <div>
+              <label
+                for="quantity"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Number of computers/laptops to donate
+              </label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                placeholder="Enter the number of devices"
+                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-accent focus:border-accent focus:outline-primary/50"
+                required
+              />
+            </div>
+
+            <!-- Preferred Pickup Date Field -->
+            <div>
+              <label
+                for="pickup-date"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Preferred pickup date
+              </label>
+              <input
+                type="date"
+                id="pickup-date"
+                name="pickup-date"
+                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-accent focus:border-accent focus:outline-primary/50"
+                required
+              />
+            </div>
+
+            <!-- Contact Information Field -->
+            <div>
+              <label
+                for="contact"
+                class="block text-sm font-medium text-gray-700"
+              >
+                Contact Information
+              </label>
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                placeholder="Enter your email or phone number"
+                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-accent focus:border-accent focus:outline-primary/50"
+                required
+              />
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button
+                type="submit"
+                class="w-full px-4 py-2 bg-primary text-white font-semibold rounded-md shadow-md hover:bg-primary/80 transition duration-300"
+              >
+                Submit Donation
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- give support/#1 -->
+      <section
+        class="bg-primary py-16 px-8 text-center rounded-xl shadow-2xl max-w-4xl mx-auto my-20 transform hover:scale-105 transition-transform duration-300"
+      >
+        <!-- Heading -->
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">
+          Apply for a Laptop or Computer
+        </h2>
+
+        <!-- Description -->
+        <p class="text-white/90 text-lg lg:text-lg mb-8 max-w-2xl mx-auto">
+          Are you passionate about technology but lack the necessary tools to
+          get started? We believe that access to technology should not be a
+          barrier to learning. If you need a laptop or computer to support your
+          tech training journey, apply today and take the next step toward your
+          future in tech!
+        </p>
+
+        <!-- Apply Now Button -->
+        <a
+          href="#apply-form"
+          class="inline-block bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 hover:text-primary/90 transition duration-300 shadow-md hover:shadow-lg"
+        >
+          Apply Now
+        </a>
+      </section>
+      <!-- apply for a laptop form/#2 -->
+      <section class="min-h-screen flex flex-col lg:flex-row" id="apply-form">
+        <!-- Image Section -->
+        <div
+          class="lg:w-1/2 bg-cover bg-center"
+          style="
+            background-image: url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg');
+          "
+        >
+          <!-- Overlay for better text contrast -->
+          <div class="h-full bg-black/50 flex items-center justify-center p-8">
+            <div class="text-white text-center">
+              <h2 class="text-4xl lg:text-5xl font-bold mb-4">
+                Apply for a Computer or Laptop
+              </h2>
+              <p class="text-lg">
+                Empower your future with access to technology. Fill out the form
+                to apply for a laptop or computer today.
+              </p>
+            </div>
           </div>
         </div>
 
+        <!-- Form Section -->
+        <div class="lg:w-1/2 p-8 flex items-center justify-center">
+          <div class="w-full max-w-md">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              Application Form
+            </h3>
+            <form class="space-y-6">
+              <!-- Name Field -->
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                  required
+                />
+              </div>
+
+              <!-- Contact Field -->
+              <div>
+                <label
+                  for="contact"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  Contact
+                </label>
+                <input
+                  type="text"
+                  id="contact"
+                  name="contact"
+                  placeholder="Enter your phone number"
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                  required
+                />
+              </div>
+
+              <!-- Email Field -->
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                  required
+                />
+              </div>
+
+              <!-- Reason for Needing the Laptop -->
+              <div>
+                <label
+                  for="reason"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  Why do you need the laptop?
+                </label>
+                <textarea
+                  id="reason"
+                  name="reason"
+                  rows="4"
+                  placeholder="Explain why you need the laptop"
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- When Do You Need the Laptop? -->
+              <div>
+                <label
+                  for="timeline"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  When do you need the laptop?
+                </label>
+                <input
+                  type="text"
+                  id="timeline"
+                  name="timeline"
+                  placeholder="Enter your timeline (e.g., within 2 weeks)"
+                  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                  required
+                />
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button
+                  type="submit"
+                  class="w-full px-4 py-2 bg-accent text-white font-semibold rounded-md shadow-md hover:bg-accent/80 transition duration-300"
+                >
+                  Submit Application
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- others -->
+      <section class="mt-10">
+        <h1 class="text-4xl font-bold text-primary text-center my-6 uppercase">
+          Sources of Funding
+        </h1>
+        <div class="flex items-center justify-center gap-4 mt-2">
+          <span class="w-16 h-px bg-gray-300"></span>
+          <!-- <img
+        src="./logo/asam.png"
+        alt="icon"
+        class="mx-2 h-14 opacity-50"
+      /> -->
+          <span class="w-16 h-px bg-gray-300"></span>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-8 max-w-2xl mx-auto">
+          <!-- Heading -->
+          <h2 class="text-2xl lg:text-3xl font-bold text-primary mb-6">
+            Initial Funding
+          </h2>
+
+          <!-- List -->
+          <ul class="space-y-4">
+            <!-- Family Endowment -->
+            <li class="flex items-start">
+              <span class="text-secondary text-lg mr-3">•</span>
+              <div>
+                <p class="text-gray-800 font-semibold">
+                  Family endowment from Apostle Samuel Aziator’s family
+                </p>
+              </div>
+            </li>
+
+            <!-- Church Fundraising Events -->
+            <li class="flex items-start">
+              <span class="text-secondary text-lg mr-3">•</span>
+              <div>
+                <p class="text-gray-800 font-semibold">
+                  Church of Conquerors International fundraising events
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
         <div>
           <h1
             class="text-3xl font-bold text-primary text-center my-6 uppercase"
           >
-            others sources
+            other sources
           </h1>
-          <div class="flex items-center justify-center gap-4 mt-2">
-            <span class="w-16 h-px bg-gray-300"></span>
-            <!-- <img
-              src="./logo/asam.png"
-              alt="icon"
-              class="mx-2 h-14 opacity-50"
-            /> -->
-            <span class="w-16 h-px bg-gray-300"></span>
-          </div>
           <div
             id="funding-section"
             class="grid p-5 gap-4 lg:grid-cols-2 lg:gap-0 lg:w-[60%] mx-auto mt-10"
           ></div>
+        </div>
+      </section>
+      <!-- donation call for action -->
+      <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+          <!-- Heading -->
+          <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+            Join Us in Empowering the Next Generation of Tech Leaders
+          </h2>
+
+          <!-- Description -->
+          <p class="text-lg mb-8">
+            If you are interested in donating laptops or computers, or would
+            like to learn more about our initiative, please contact us at
+            <a
+              href="tel:0246277177"
+              class="font-semibold underline hover:text-accent transition duration-300"
+            >
+              0246277177
+            </a>
+            or
+            <a
+              href="mailto:support@asamfoundation.org"
+              class="font-semibold underline hover:text-accent transition duration-300"
+            >
+              support@asamfoundation.org </a
+            >. Let's work together to create a brighter, more digitally
+            inclusive future for all.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <!-- Contact Button -->
+            <a
+              href="tel:0246277177"
+              class="px-8 py-3 bg-white text-primary font-semibold rounded-full shadow-lg hover:bg-gray-100 hover:text-primary/80 transition duration-300"
+            >
+              Call Us Now
+            </a>
+
+            <!-- Email Button -->
+            <a
+              href="mailto:support@asamfoundation.org"
+              class="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-full shadow-lg hover:bg-white hover:text-primary transition duration-300"
+            >
+              Email Us
+            </a>
+          </div>
         </div>
       </section>
     </main>

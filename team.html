@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/logo/asam.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // taosd
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#05050a",
+              background: "#fbfbfe",
+              primary: "#092f3c",
+              secondary: "#f39530",
+              secondary2: "#cbd3d7",
+              accent: "#ffeace",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
+    <main class="pt-[100px]">
+      <!-- hero section -->
+      <section>
+        <div
+          class="bg-primary h-[30vh] lg:h-[35vh] flex justify-center items-center relative"
+        >
+          <h1 class="text-white text-4xl md:text-6xl font-bold font-">
+            <span class="text-secondary">ASAM'S</span>
+            Team
+          </h1>
+          <!-- <img
+            src="./logo/asamfirst.png"
+            alt=""
+            width="150px"
+            class="bg-red- absolute bottom-0"
+          /> -->
+        </div>
+      </section>
+      <!-- little intro for team -->
+      <section>
+        <!-- about -->
+        <div class="text-center lg:w-[70%] mx-auto">
+          <div>
+            <h2 class="lg:text-6xl md:text-3xl font-bold text-black mt-10">
+              Our Team
+            </h2>
+            <div class="flex items-center justify-center mt-2">
+              <span class="w-16 h-px bg-gray-300"></span>
+              <img
+                src="./logo/asam.png"
+                alt="icon"
+                class="mx-2 h-14 opacity-50"
+              />
+              <span class="w-16 h-px bg-gray-300"></span>
+            </div>
+          </div>
+          <div class="lg:w-[60%] mx-auto">
+            <p>
+              Our team is composed of passionate individuals who are dedicated
+              to making a difference. With a shared commitment to service and a
+              genuine love for helping others, they work together to create
+              meaningful impact and drive positive change.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- advisor board -->
+      <section class="my-16">
+        <div class="grid grid-cols-6 max-w-4xl mx-auto gap-3">
+          <!-- First div (1 column) -->
+          <div
+            class="p-4 rounded-2xl col-span-2 bg-secondary/70 text-center flex flex-col justify-center"
+          >
+            <h1 class="text-lg font-bold text-white uppercase items-center">
+              Advisory Board
+            </h1>
+            <p class="text-sm text-white mt-2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
+              quo.
+            </p>
+          </div>
+          <!-- Second div (2 columns) -->
+          <div class="col-span-4">
+            <!-- Team Member 1 -->
+            <div class="bg-gray-100 flex flex-col md:flex-row shadow-lg">
+              <!-- Image Section -->
+              <div class="w-full md:w-1/2">
+                <img
+                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+                  alt="Alex Greenfield"
+                  class="w-full h-[320px] object-cover object-center"
+                />
+              </div>
+
+              <!-- Content Section -->
+              <div class="w-full md:w-1/2 p-4 flex flex-col justify-center">
+                <h3 class="text-lg font-bold uppercase">
+                  Prophet Dr Emmanuel Baidoo
+                </h3>
+                <p class="text-red-600 font-semibold">Creative Leader</p>
+                <p class="text-gray-600 mt-2 text-sm">
+                  Glavi amet ritnisi libero molestie ante ut fringilla purus
+                  eros quis.
+                </p>
+              </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="bg-gray-100 flex flex-col md:flex-row shadow-lg">
+              <!-- Content Section -->
+              <div class="w-full md:w-1/2 p-4 flex flex-col justify-center">
+                <h3 class="text-lg font-bold uppercase">
+                  Prophet Dr Attah Asamoah
+                </h3>
+                <p class="text-red-600 font-semibold">Creative Leader</p>
+                <p class="text-gray-600 mt-2 text-sm">
+                  Glavi amet ritnisi libero molestie ante ut fringilla purus
+                  eros quis.
+                </p>
+              </div>
+              <!-- Image Section -->
+              <div class="w-full md:w-1/2">
+                <img
+                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+                  alt="Alex Greenfield"
+                  class="w-full h-[320px] object-cover object-center"
+                />
+              </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="bg-gray-100 flex flex-col md:flex-row shadow-lg">
+              <!-- Image Section -->
+              <div class="w-full md:w-1/2">
+                <img
+                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+                  alt="Alex Greenfield"
+                  class="w-full h-[320px] object-cover object-center"
+                />
+              </div>
+
+              <!-- Content Section -->
+              <div class="w-full md:w-1/2 p-4 flex flex-col justify-center">
+                <h3 class="text-lg font-bold uppercase">Ps Dzamdo Dzobokou</h3>
+                <p class="text-red-600 font-semibold">Creative Leader</p>
+                <p class="text-gray-600 mt-2 text-sm">
+                  Glavi amet ritnisi libero molestie ante ut fringilla purus
+                  eros quis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- board of director -->
+      <section>
+        <div class="max-w-6xl mx-auto text-center pb-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#b56919]">
+            Board of Directors
+          </h2>
+          <!-- Team Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <!-- Team Member 1 -->
+            <div class="bg-secondary2 shadow-lg p-6 rounded-lg">
+              <div class="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Adam Jonson"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mt-4">Adam Jonson</h3>
+              <p class="text-gray-600 text-sm uppercase tracking-wide">
+                Chief Operating Officer
+              </p>
+              <p class="text-gray-500 text-sm mt-2">
+                Sample text. Click to select the text box.
+              </p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="bg-secondary2 shadow-lg p-6 rounded-lg">
+              <div class="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="Marry Hudson"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mt-4">Marry Hudson</h3>
+              <p class="text-gray-600 text-sm uppercase tracking-wide">
+                Director of Marketing
+              </p>
+              <p class="text-gray-500 text-sm mt-2">
+                Sample text. Click to select the text box.
+              </p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="bg-secondary2 shadow-lg p-6 rounded-lg">
+              <div class="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                <img
+                  src="https://randomuser.me/api/portraits/men/45.jpg"
+                  alt="Bob Larson"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mt-4">Bob Larson</h3>
+              <p class="text-gray-600 text-sm uppercase tracking-wide">
+                Relationship Manager
+              </p>
+              <p class="text-gray-500 text-sm mt-2">
+                Sample text. Click to select the text box.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--meet the team -->
+      <section>
+        <div class="text-center py-12 bg-primary">
+          <!-- Title -->
+          <h2 class="text-2xl md:text-3xl font-bold text-[#d57c45]">
+            Meet Our Team
+          </h2>
+
+          <!-- Team Grid -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8 px-16"
+          >
+            <!-- Team Member 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div
+                class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-[#d57c45]"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/men/31.jpg"
+                  alt="Alex Smith"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mt-4">Alex Smith</h3>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="text-[#d57c45] font-semibold mt-2">Creative Leader</p>
+              <!-- Social Icons -->
+              <div class="flex justify-center mt-3 space-x-4 text-gray-600">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div
+                class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-[#d57c45]"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/women/40.jpg"
+                  alt="May Brown"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mt-4">May Brown</h3>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="text-[#d57c45] font-semibold mt-2">Sales Manager</p>
+              <!-- Social Icons -->
+              <div class="flex justify-center mt-3 space-x-4 text-gray-600">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div
+                class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-[#d57c45]"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/women/22.jpg"
+                  alt="Ann Richmond"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mt-4">Ann Richmond</h3>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="text-[#d57c45] font-semibold mt-2">Web Developer</p>
+              <!-- Social Icons -->
+              <div class="flex justify-center mt-3 space-x-4 text-gray-600">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div
+                class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-[#d57c45]"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/women/19.jpg"
+                  alt="Roxie Swanson"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="text-lg font-bold mt-4">Roxie Swanson</h3>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="text-[#d57c45] font-semibold mt-2">Web Designer</p>
+              <!-- Social Icons -->
+              <div class="flex justify-center mt-3 space-x-4 text-gray-600">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footerl -->
+    <footer id="footer"></footer>
+    <script src="./scriptFiles/script.js"></script>
+    <script src="./scriptFiles/contact.js"></script>
+  </body>
+</html>

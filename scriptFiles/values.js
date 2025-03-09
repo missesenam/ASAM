@@ -22,7 +22,7 @@ const values = [
   {
     title: "Inclusivity",
     description: "Serving both church members and the broader community.",
-    image: "./img/community.jpg",
+    image: "./img/integration.jpg",
   },
   {
     title: "Collaboration",
@@ -41,13 +41,13 @@ function renderCards() {
   container.innerHTML = values
     .map(
       (item) => `
-        <div class="flex flex-col md:flex-row w-full bg-white shadow-sm border border-accent rounded-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row w-full bg-white shadow-sm border-2 border-primary/70 rounded-lg overflow-hidden">
           <div class="p-2.5 md:w-3/6 shrink-0">
             <img src="${item.image}" alt="${item.title}" class="h-full w-full rounded-md md:rounded-lg object-cover" />
           </div>
-          <div class="p-3 md:w-3/6 flex flex-col justify-center">
-            <h4 class="mb-2 text-text text-xl font-semibold">${item.title}</h4>
-            <p class="mb-4 text-text leading-normal font-light">${item.description}</p>
+          <div class="p-3 md:w-3/6 flex flex-col justify-center text-text">
+            <h4 class="mb-2 text-xl font-semibold text-primary">${item.title}</h4>
+            <p class="mb-4 leading-normal font-light">${item.description}</p>
           </div>
         </div>`
     )

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/logo/asam.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // taosd
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#05050a",
+              background: "#fbfbfe",
+              primary: "#092f3c",
+              secondary: "#f39530",
+              secondary2: "#fae7d5",
+              accent: "#ffeace",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
+    <main class="pt-[100px]">
+      <section>
+        <div class="my-7">
+          <h1
+            class="text-4xl sm:text-6xl lg:text-8xl font-normal text-center text-primary"
+          >
+            Our Programs
+          </h1>
+        </div>
+      </section>
+    </main>
+    <!-- footerl -->
+    <footer id="footer"></footer>
+    <script src="./scriptFiles/script.js"></script>
+    <script src="scriptFiles/faqs.js"></script>
+  </body>
+</html>

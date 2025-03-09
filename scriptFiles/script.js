@@ -3,7 +3,7 @@ const navbarElement = document.getElementById("navbar");
 
 // Set the innerHTML of the element
 navbarElement.innerHTML = `
- <div class="navbar h-[100px] md:w-[80%] mx-auto  relative">
+<div class="navbar h-[100px] md:w-[80%] mx-auto relative">
   <div class="flex items-center justify-between w-full">
     <!-- Logo -->
     <div class="flex-1">
@@ -16,19 +16,49 @@ navbarElement.innerHTML = `
     <div class="flex-none sm:hidden">
       <button id="menu-toggle" class="p-2 focus:outline-none">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-</svg>
-
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </button>
     </div>
 
     <!-- Menu Items -->
-    <div id="menu" class="flex-none hidden sm:block opacity-70 backdrop-blur-3xl">
+    <div id="menu" class="flex-none hidden sm:block">
       <ul class="menu menu-horizontal px-1 text-primary navliknks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="application.html">Apllication</a></li>
-        <li><a href="donation.html">donation</a></li>
+        <!-- About with Sub-Menu -->
+        <li class="relative group">
+          <a href="#" class="flex items-center" id="about-toggle">
+            About
+            <!-- Down Arrow Icon -->
+            <svg id="about-arrow" class="w-4 h-4 ml-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+          <!-- Sub-Menu -->
+          <ul id="about-submenu" class="absolute hidden top-8 bg-background rounded-lg shadow-lg mt-2 py-2 w-48 z-20 text-text">
+            <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-100">About Us</a></li>
+            <li><a href="team.html" class="block px-4 py-2 hover:bg-gray-100">Our Team</a></li>
+            <!-- <li><a href="partners.html" class="block px-4 py-2 hover:bg-gray-100">Funding & Partnerships</a></li>-->
+            <li><a href="legacy.html" class="block px-4 py-2 hover:bg-gray-100">Our Legacy</a></li>
+          </ul>
+        </li>
+        <li><a href="donation.html">Get or Donate Laptop</a></li>
+        <!-- Admissions with Sub-Menu -->
+        <li class="relative group">
+          <a href="#" class="flex items-center" id="admissions-toggle">
+            Admissions
+            <!-- Down Arrow Icon -->
+            <svg id="admissions-arrow" class="w-4 h-4 ml-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+          <!-- Sub-Menu -->
+          <ul id="admissions-submenu" class="absolute hidden top-8 bg-background rounded-lg shadow-lg mt-2 py-2 w-48 z-20 text-text">
+            <li><a href="programs.html" class="block px-4 py-2 hover:bg-gray-100">Our Programs & Services</a></li>
+            <!--<li><a href="eligibility" class="block px-4 py-2 hover:bg-gray-100">Eligibility & Benefits</a></li>-->
+            <li><a href="admissions.html" class="block px-4 py-2 hover:bg-gray-100">Admission Process</a></li>
+          </ul>
+        </li>
         <li><a href="FAQs.html">FAQs</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -36,20 +66,102 @@ navbarElement.innerHTML = `
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full justify-end bg-white/50 backdrop-blur-lg  custom-backdrop z-10">
+  <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full justify-end bg-white/50 backdrop-blur-lg custom-backdrop z-10">
     <ul class="menu p-2 navliknks">
       <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="application.html">Apllication</a></li>
-        <li><a href="funding.html">Funding</a></li>
-        <li><a href="FAQs.html">FAQs</a></li>
-        <li><a href="contact.html">Contact</a></li>  
+      <!-- About with Sub-Menu for Mobile -->
+      <li>
+        <a href="about.html" class="flex items-center justify-between" id="mobile-about-toggle">
+          About
+          <!-- Down Arrow Icon -->
+          <svg id="mobile-about-arrow" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
+        <!-- Sub-Menu -->
+        <ul id="mobile-about-submenu" class="pl-4 hidden">
+          <li><a href="about.html#mission" class="block px-4 py-2 text-primary hover:bg-gray-100">Our Mission</a></li>
+          <li><a href="team.html" class="block px-4 py-2 text-primary hover:bg-gray-100">Our Team</a></li>
+          <li><a href="partners.html" class="block px-4 py-2 hover:bg-gray-100">Funding & Partnerships</a></li>
+          <li><a href="legacy.html" class="block px-4 py-2 text-primary hover:bg-gray-100">Our Legacy</a></li>
+        </ul>
+      </li>
+      <!-- Admissions with Sub-Menu for Mobile -->
+      <li>
+        <a href="admission.html" class="flex items-center justify-between" id="mobile-admissions-toggle">
+          Admissions
+          <!-- Down Arrow Icon -->
+          <svg id="mobile-admissions-arrow" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
+        <!-- Sub-Menu -->
+        <ul id="mobile-admissions-submenu" class="pl-4 hidden">
+          <li><a href="admission.html" class="block px-4 py-2 text-primary hover:bg-gray-100">Admission Process</a></li>
+          <li><a href="admission.html#requirements" class="block px-4 py-2 text-primary hover:bg-gray-100">Requirements</a></li>
+          <li><a href="admission.html#deadlines" class="block px-4 py-2 text-primary hover:bg-gray-100">Deadlines</a></li>
+        </ul>
+      </li>
+      <li><a href="donation.html">Get or Donate Laptop</a></li>
+      <li><a href="FAQs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
 </div>
 
 
 `;
+const aboutToggle = document.getElementById("about-toggle");
+const aboutSubmenu = document.getElementById("about-submenu");
+const aboutArrow = document.getElementById("about-arrow");
+
+aboutToggle.addEventListener("click", (e) => {
+  e.preventDefault(); // Prevent default link behavior
+  aboutSubmenu.classList.toggle("hidden");
+  aboutArrow.classList.toggle("rotate-180"); // Rotate arrow
+});
+
+// Toggle for Admissions (Desktop)
+const admissionsToggle = document.getElementById("admissions-toggle");
+const admissionsSubmenu = document.getElementById("admissions-submenu");
+const admissionsArrow = document.getElementById("admissions-arrow");
+
+admissionsToggle.addEventListener("click", (e) => {
+  e.preventDefault(); // Prevent default link behavior
+  admissionsSubmenu.classList.toggle("hidden");
+  admissionsArrow.classList.toggle("rotate-180"); // Rotate arrow
+});
+
+// Toggle for About (Mobile)
+const mobileAboutToggle = document.getElementById("mobile-about-toggle");
+const mobileAboutSubmenu = document.getElementById("mobile-about-submenu");
+const mobileAboutArrow = document.getElementById("mobile-about-arrow");
+
+mobileAboutToggle.addEventListener("click", (e) => {
+  e.preventDefault(); // Prevent default link behavior
+  mobileAboutSubmenu.classList.toggle("hidden");
+  mobileAboutArrow.classList.toggle("rotate-180"); // Rotate arrow
+});
+
+// Toggle for Admissions (Mobile)
+const mobileAdmissionsToggle = document.getElementById(
+  "mobile-admissions-toggle"
+);
+const mobileAdmissionsSubmenu = document.getElementById(
+  "mobile-admissions-submenu"
+);
+const mobileAdmissionsArrow = document.getElementById(
+  "mobile-admissions-arrow"
+);
+
+mobileAdmissionsToggle.addEventListener("click", (e) => {
+  e.preventDefault(); // Prevent default link behavior
+  mobileAdmissionsSubmenu.classList.toggle("hidden");
+  mobileAdmissionsArrow.classList.toggle("rotate-180"); // Rotate arrow
+});
+/*---------------------
+End
+-----------------------*/
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 

@@ -31,25 +31,59 @@
         },
       };
     </script>
+    <!-- Custom Animation -->
+    <style>
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fade-in 1s ease-out;
+      }
+    </style>
   </head>
   <body>
     <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
     <main class="pt-[100px]">
-      <section>
+      <!-- Hero Section -->
+      <section
+        class="relative text-white text-center py-16 bg-cover bg-center bg-no-repeat h-[60vh]"
+        style="background-image: url('./img/children.jpg')"
+      >
         <div
-          class="bg-[url('./img/children.jpg')] bg-cover bg-center bg-no-repeat h-[30vh] lg:h-[300px] mt-10 flex flex-col lg:flex-row w-[90%] lg:w-[80%] mx-auto"
+          class="bg-black/50 w-full h-full flex flex-col items-center justify-center p-5"
         >
-          <div
-            class="bg-black/50 w-full h-full flex flex-col text-white text-center items-center justify-center p-5"
+          <h1 class="text-5xl lg:text-8xl font-bold text-accent uppercase">
+            ASAM Foundation
+          </h1>
+          <p class="text-lg lg:text-2xl mt-4">
+            Empowering Lives, Transforming Futures
+          </p>
+          <a
+            href="#about"
+            class="mt-6 px-6 py-3 text-lg font-semibold bg-secondary text-white rounded-lg hover:bg-primary transition"
+            >Learn More</a
           >
-            <h1
-              class="text-4xl lg:text-8xl font-bold text-accent text-center my-6 uppercase"
-            >
-              asam
-            </h1>
-          </div>
         </div>
-        <div class="grid lg:grid-cols-2 mt-32 px-5 lg:w-[90%] mx-auto">
+      </section>
+      <!-- about Section -->
+      <section>
+        <h1
+          class="text-5xl lg:text-6xl font-bold text-gray-900 text-center relative mt-8"
+        >
+          About Our History
+          <!-- Gradient Underline (Shorter and Centered) -->
+          <span
+            class="absolute -bottom-6 left-1/2 w-1/2 h-1 bg-gradient-to-r from-secondary2 to-secondary transform -translate-x-1/2 translate-y-2"
+          ></span>
+        </h1>
+        <div class="grid lg:grid-cols-2 mt-24 px-5 lg:w-[90%] mx-auto">
           <div class="flex flex-col gap-6 max-w-xl mx-auto text-center p-6">
             <h1 class="text-4xl font-bold text-primary tracking-wide">
               Legacy Lives On
@@ -62,7 +96,7 @@
             </p>
 
             <a
-              href="#"
+              href="about.html"
               class="text-primary font-medium text-lg inline-block hover:underline hover:text-secondary transition-all"
             >
               Read more
@@ -70,62 +104,501 @@
           </div>
 
           <div>
-            <img src="./img/trophy,achievement.jpg" alt="" />
+            <img src="./img/trophy,achievement.jpg" alt="" class="rounded-lg" />
           </div>
         </div>
       </section>
-      <section class="mt-32">
-        <h1
-          class="text-4xl lg:text-6xl font-bold text-primary tracking-wide mb-5 text-center"
+      <!-- Application Process -->
+      <section class="bg-primary/50 pb-16">
+        <div class="flex items-center justify-center gap-4 my-16 pt-16">
+          <!-- Left Line with Gradient -->
+          <div
+            class="w-16 h-1 bg-gradient-to-r from-transparent via-primary to-transparent"
+          ></div>
+
+          <!-- Header Text with Animation -->
+          <h1
+            class="text-4xl lg:text-6xl font-bold text-primary tracking-wide text-center animate-fade-in"
+          >
+            Application
+          </h1>
+
+          <!-- Right Line with Gradient -->
+          <div
+            class="w-16 h-1 bg-gradient-to-l from-transparent via-primary to-transparent"
+          ></div>
+        </div>
+
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 p-6"
         >
-          Principal Activities
-        </h1>
-        <div class="grid lg:grid-cols-2 lg:h-[60vh] lg:w-[95%] mx-auto gap-5">
-          <div class="flex flex-col md:flex-row h-full shadow-2xl px-3 lg:pl-4">
-            <div class="flex flex-col justify-center lg:h-full lg:w-[50%]">
-              <div>
-                <h1
-                  class="text-4xl font-bold text-secondary tracking-wide mb-5"
+          <!-- Card 1 -->
+          <div
+            class="relative bg-gradient-to-br from-[#092f3c] to-[#f39530] rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500 group"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#092f3c] to-[#f39530] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+            <div class="relative p-8 text-[#fbfbfe]">
+              <div
+                class="w-12 h-12 bg-[#cbd3d7] bg-opacity-20 rounded-full flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-6 h-6 text-[#fbfbfe]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  Community Outreach
-                </h1>
-                <p
-                  class="border-b-2 border-secondary pb-3 text-lg font-semibold text-primary tracking-wide"
-                >
-                  Partnerships, workshops, seminars, and conferences.
-                </p>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18v2h12v-2"
+                  ></path>
+                </svg>
               </div>
+              <h1 class="text-3xl font-bold mb-4">Scholarships & Grants</h1>
+              <p class="text-lg font-medium opacity-90 mb-6">
+                Financial aid opportunities for students to pursue education and
+                career development.
+              </p>
+              <button
+                class="bg-[#f39530] text-[#05050a] px-6 py-3 rounded-full font-semibold hover:bg-[#cbd3d7] hover:text-[#092f3c] transition-colors duration-300"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="relative bg-gradient-to-br from-[#092f3c] to-[#f39530] rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-500 group"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#092f3c] to-[#f39530] opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+            <div class="relative p-8 text-[#fbfbfe]">
+              <div
+                class="w-12 h-12 bg-[#cbd3d7] bg-opacity-20 rounded-full flex items-center justify-center mb-6"
+              >
+                <svg
+                  class="w-6 h-6 text-[#fbfbfe]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </div>
+              <h1 class="text-3xl font-bold mb-4">Entrepreneurship Training</h1>
+              <p class="text-lg font-medium opacity-90 mb-6">
+                Programs designed to equip individuals with business skills,
+                mentorship, and funding support.
+              </p>
+              <button
+                class="bg-[#f39530] text-[#05050a] px-6 py-3 rounded-full font-semibold hover:bg-[#cbd3d7] hover:text-[#092f3c] transition-colors duration-300"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Application Process Column -->
+          <div
+            class="flex flex-col items-center justify-center p-8 bg-gray-100 rounded-2xl shadow-lg text-center"
+          >
+            <h1 class="text-2xl font-bold text-gray-900 mb-4">How to Apply</h1>
+            <p class="text-gray-700 mb-6">
+              Learn about eligibility, steps, and benefits of our programs.
+            </p>
+            <button
+              class="bg-[#092f3c] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#f39530] hover:text-[#05050a] transition-colors duration-300"
+            >
+              Learn More About Application Process
+            </button>
+          </div>
+        </div>
+
+        <!-- <hr
+          class="h-[2px] my-8 bg-gradient-to-r from-transparent via-background to-transparent border-0"
+        /> -->
+
+        <hr
+          class="lg:w-1/2 mx-auto border-t border-dashed border-background my-20"
+        />
+
+        <div class="grid lg:grid-cols-2 px-5 lg:w-[90%] mx-auto">
+          <div>
+            <img
+              src="https://cdn.pixabay.com/photo/2019/10/25/11/07/business-4576778_640.jpg"
+              alt=""
+              class="rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col gap-6 max-w-xl mx-auto text-center p-6">
+            <h1 class="text-4xl font-bold text-primary tracking-wide">
+              Application Eligibility & Benefits
+            </h1>
+
+            <p class="text-lg leading-relaxed text-gray-700">
+              Discover who qualifies for the program and the advantages of
+              applying. Learn about the key criteria and the valuable benefits
+              you can receive upon acceptance.
+            </p>
+
+            <a
+              href="about.html"
+              class="group flex items-center justify-center gap-2 font-semibold text-lg text-primary hover:text-secondary transition-all duration-300"
+            >
+              <span>Read more</span>
+              <svg
+                class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Principal Activities -->
+      <section class="mt-24">
+        <div class="flex items-center justify-center gap-4 mb-16">
+          <div class="w-16 h-1 bg-primary"></div>
+          <h1
+            class="text-4xl lg:text-6xl font-bold text-primary tracking-wide text-center"
+          >
+            Principal Activities
+          </h1>
+          <div class="w-16 h-1 bg-primary"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-2">
+          <!-- Row 1, Column 1 -->
+          <div
+            class="border-2 border-accent p-6 rounded-xl bg-primary shadow-lg hover:scale-105 transition-transform"
+          >
+            <h2 class="text-xl font-bold text-secondary tracking-wide mb-2">
+              Educational Empowerment
+            </h2>
+            <p class="text-lg text-gray-300 font-medium">
+              Scholarships, mentorship, tutoring, and counseling
+            </p>
+          </div>
+
+          <!-- Row 1, Column 2 -->
+          <div
+            class="border-2 border-accent p-6 rounded-xl bg-primary shadow-lg hover:scale-105 transition-transform"
+          >
+            <h1 class="text-xl font-bold text-secondary tracking-wide mb-2">
+              Business Support
+            </h1>
+            <p class="text-lg text-gray-300 font-medium">
+              Entrepreneurship training, funding, grants, incubation, and
+              acceleration.
+            </p>
+          </div>
+
+          <!-- Row 1, Column 3 -->
+          <div
+            class="border-2 border-accent p-6 rounded-xl bg-primary shadow-lg hover:scale-105 transition-transform"
+          >
+            <div>
+              <h1 class="text-xl font-bold text-secondary tracking-wide mb-2">
+                Skills Training
+              </h1>
+              <p class="text-lg text-gray-300 font-medium">
+                Vocational training and apprenticeships.
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 2, Column 1 -->
+          <div class="p-6"></div>
+
+          <!-- Row 2, Column 2 -->
+          <div
+            class="relative bg-primary/70 backdrop-blur-md border-2 border-secondary/20 p-4 rounded-2xl shadow-2xl hover:shadow-3xl hover:border-secondary/40 transition-all duration-500 group overflow-hidden"
+          >
+            <!-- Background Gradient Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-primary/50 to-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+
+            <!-- Content -->
+            <div class="relative z-10">
+              <!-- Heading -->
+              <div class="flex items-center gap-2 mb-3">
+                <div class="h-1 w-6 bg-secondary rounded-full"></div>
+                <h2 class="text-2xl font-bold text-secondary tracking-wide">
+                  Want to Know More?
+                </h2>
+              </div>
+              <!-- Description -->
+              <p class="text-lg text-[#cbd3d7] font-medium mb-3">
+                Explore our activities, programs, and initiatives by clicking
+                the button below.
+              </p>
+
+              <!-- Read More Button -->
+              <div class="flex justify-end">
+                <button
+                  class="bg-secondary text-[#05050a] px-6 py-3 rounded-full font-semibold hover:bg-secondary hover:text-primary transition-colors duration-300 flex items-center gap-2"
+                >
+                  Read More
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Row 2, Column 3 -->
+          <div class="p-6 rounded-lg"></div>
+        </div>
+      </section>
+
+      <!-- more -->
+      <section>
+        <div class="max-w-5xl mx-auto py-16 space-y-8">
+          <!-- Box 1 -->
+          <div
+            class="flex items-center justify-between bg-background p-6 rounded-xl border border-secondary2 hover:shadow-lg transition duration-300"
+          >
+            <div class="max-w-3xl">
+              <h2 class="text-text text-2xl font-bold flex items-center">
+                Our mission<span class="text-secondary ml-1">.</span>
+              </h2>
+              <p class="text-primary mt-2 text-lg">
+                Our mission is to empower individuals, strengthen communities,
+                and create lasting impact through education, entrepreneurship,
+                and skill development.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="w-12 h-12 flex items-center justify-center rounded-lg border border-primary hover:bg-primary transition duration-300"
+            >
+              <svg
+                class="w-6 h-6 text-primary hover:text-accent"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Box 2 -->
+          <div
+            class="flex items-center justify-between bg-background p-6 rounded-xl border border-secondary2 hover:shadow-lg transition duration-300"
+          >
+            <div class="max-w-3xl">
+              <h2 class="text-text text-2xl font-bold flex items-center">
+                Core Values<span class="text-secondary ml-1">.</span>
+              </h2>
+              <p class="text-primary mt-2 text-lg">
+                Our core values define who we are and guide our mission. They
+                reflect our commitment to integrity, innovation, inclusivity,
+                and excellence. Through these principles, we strive to empower
+                individuals, uplift communities, and create lasting impact.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="w-12 h-12 flex items-center justify-center rounded-lg bg-secondary hover:bg-primary transition duration-300"
+            >
+              <svg
+                class="w-6 h-6 text-white"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Box 3 -->
+          <div
+            class="flex items-center justify-between bg-background p-6 rounded-xl border border-secondary2 hover:shadow-lg transition duration-300"
+          >
+            <div class="max-w-3xl">
+              <h2 class="text-text text-2xl font-bold flex items-center">
+                Explore Partnership Opportunities<span
+                  class="text-secondary ml-1"
+                  >.</span
+                >
+              </h2>
+              <p class="text-primary mt-2 text-lg">
+                Join us in creating meaningful change. Collaborate with us to
+                empower individuals, support communities, and drive innovation.
+                Become a partner today!
+              </p>
+            </div>
+            <a
+              href="#"
+              class="w-12 h-12 flex items-center justify-center rounded-lg border border-primary hover:bg-primary transition duration-300"
+            >
+              <svg
+                class="w-6 h-6 text-primary hover:text-accent"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--get or donate a computer -->
+      <section class="mb-16">
+        <h1
+          class="text-4xl lg:text-6xl font-bold text-primary text-center tracking-wide my-10"
+        >
+          Unlock <span class="text-secondary">Opportunities</span> with a Laptop
+        </h1>
+
+        <div class="grid lg:grid-cols-2 lg:h-[45vh] lg:w-[90%] mx-auto gap-5">
+          <!-- 1 -->
+          <div
+            class="flex flex-col md:flex-row h-full shadow-2xl px-3 lg:pl-4 rounded-lg bg-secondary/20"
+          >
+            <div class="flex flex-col justify-center lg:h-full lg:w-[50%]">
+              <!-- <div> -->
+              <h1 class="text-4xl font-bold text-secondary tracking-wide mb-5">
+                Get a computer
+              </h1>
+              <p class="pb-3 text-lg font-semibold text-primary tracking-wide">
+                Apply for a laptop and turn your dreams into reality.
+              </p>
+              <!-- </div> -->
+              <button
+                class="bg-secondary text-primary font-semibold mt-2 px-6 py-3 rounded-full shadow-lg hover:bg-primary hover:text-secondary transition-all duration-300 border-l-4 border-r-4 border-primary/80"
+              >
+                <a href="">Apply Now</a>
+              </button>
             </div>
             <!--  -->
             <div class="lg:w-[50%]">
-              <img src="./img/com.png" alt="" class="h-full object-cover" />
+              <img src="./img/com.png" alt="" />
             </div>
           </div>
           <!-- 2 -->
-          <div class="flex flex-col md:flex-row h-full shadow-2xl px-3 lg:pl-4">
+          <div
+            class="flex flex-col md:flex-row h-full shadow-2xl px-2 lg:pl-4 bg-secondary/20 rounded-2xl"
+          >
             <div class="flex flex-col justify-center lg:h-full lg:w-[50%]">
-              <div>
-                <h1
-                  class="text-4xl font-bold text-secondary tracking-wide mb-5"
-                >
-                  Individual Development
-                </h1>
-                <p
-                  class="border-b-2 border-secondary pb-3 text-lg font-semibold text-primary tracking-wide"
-                >
-                  Capacity building, coaching, and leadership development
-                </p>
-              </div>
+              <!-- <div> -->
+              <h1 class="text-4xl font-bold text-secondary tracking-wide mb-5">
+                Donate a laptop
+              </h1>
+              <p class="pb-3 text-lg font-semibold text-primary tracking-wide">
+                Empowering students with digital skills.
+              </p>
+              <!-- </div> -->
+              <button
+                class="bg-secondary text-primary font-semibold mt-2 px-6 py-3 rounded-full shadow-lg hover:bg-primary hover:text-secondary transition-all duration-300 border-l-4 border-r-4 border-primary/80"
+              >
+                <a href="">Apply Now</a>
+              </button>
             </div>
             <!--  -->
             <div class="lg:w-[50%]">
-              <img src="./img/individual.jpg" alt="" />
+              <img src="./img/individual-removebg-preview.png" alt="" />
             </div>
           </div>
         </div>
       </section>
+      <!-- Call to Action:support -->
       <section>
-        <button>get or donate laptop</button>
+        <div
+          class="py-20 text-center bg-gradient-to-br from-primary to-secondary text-white"
+        >
+          <div class="max-w-4xl mx-auto px-6">
+            <!-- Heading -->
+            <h2 class="text-5xl font-bold mb-6">Get in Touch</h2>
+
+            <!-- Description -->
+            <p class="text-xl text-secondary2 font-medium mb-8">
+              Feel free to reach out to us for any inquiries, collaborations, or
+              support. Visit our Contact Us page to get in touch!
+            </p>
+
+            <!-- Button -->
+            <button
+              class="inline-flex items-center px-8 py-4 bg-secondary2 text-primary text-lg font-semibold rounded-full hover:bg-secondary hover:text-secondary2 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Contact Us
+              <svg
+                class="w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <!-- footerl -->

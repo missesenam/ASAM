@@ -33,8 +33,8 @@
           function ({ addUtilities }) {
             addUtilities({
               ".text-stroke": {
-                "-webkit-text-stroke": "2px #000",
-                "text-stroke": "2px #000",
+                "-webkit-text-stroke": "4px #f39530",
+                "text-stroke": "2px #f39530",
               },
             });
           },
@@ -45,14 +45,17 @@
   <body>
     <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
     <main class="pt-[100px]">
-      <!-- section one -->
+      <!-- about section -->
       <section>
         <div
-          class="bg-accent h-[30vh] lg:h-[35vh] flex justify-center items-center relative"
+          class="bg-primary h-[30vh] lg:h-[35vh] flex justify-center items-center relative"
         >
-          <h1 class="text-text text-4xl md:text-6xl font-bold font-">
+          <h1 class="text-white text-4xl md:text-6xl font-bold font-">
             About
-            <span class="text-transparent text-stroke">ASAM</span> Foundation
+            <span class="text-transparent text-stroke text-webkit-text-stroke"
+              >ASAM</span
+            >
+            Foundation
           </h1>
           <!-- <img
             src="./logo/asamfirst.png"
@@ -85,7 +88,9 @@
             </p>
           </div>
         </div>
-
+      </section>
+      <!-- mission and vision -->
+      <section>
         <!-- mission and vision -->
         <div class="flex flex-col md:flex-row gap-5 py-10 md:w-[90%] mx-auto">
           <!-- mission -->
@@ -132,7 +137,7 @@
           </div>
         </div>
       </section>
-      <!-- second section -->
+      <!-- Apostle Aziator impacted -->
       <section>
         <div class="flex flex-col md:flex-row h-[100vh] lg:h-[60vh]">
           <div
@@ -206,7 +211,9 @@
             </div>
           </div>
         </div>
-
+      </section>
+      <!-- our values -->
+      <section>
         <div>
           <div class="my-10">
             <h1 class="uppercase text-4xl lg:text-6xl font-bold text-center">
@@ -215,9 +222,185 @@
           </div>
 
           <div
-            class="grid lg:grid-cols-3 gap-5 lg:w-[80%] mx-auto"
+            class="grid lg:grid-cols-3 gap-5 lg:w-[90%] mx-auto"
             id="card-container"
           ></div>
+        </div>
+      </section>
+      <!-- know more about our program -->
+      <section class="mt-16">
+        <div class="flex flex-col items-center justify-center gap-2 mb-16">
+          <h1
+            class="text-3xl lg:text-5xl font-bold text-primary tracking-wide text-center"
+          >
+            know more about our programs
+          </h1>
+          <div class="flex gap-2 text-secondary/50 text-2xl">
+            <span class="">•</span>
+            <span class="">•</span>
+            <span class="">•</span>
+            <span class="">•</span>
+            <span class="">•</span>
+            <span class="">•</span>
+          </div>
+        </div>
+        <div
+          class="max-w-6xl mx-auto px-4 py-10 bg-gradient-to-t from-primary/80 to-secondary2"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <!-- activity 1 -->
+            <div class="text-center p-6 border-r-4 rounded-lg shadow-sm">
+              <h3 class="font-bold text-lg">Educational Empowerment</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Scholarships, mentorship, tutoring, and counseling
+              </p>
+              <img
+                src="./img/education.png"
+                alt="Template"
+                class="mx-auto mt-4"
+              />
+            </div>
+
+            <!-- activity 2 -->
+            <div class="text-center p-6 border-r-4 rounded-lg shadow-sm">
+              <h3 class="font-bold text-lg">Business Support</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Entrepreneurship training, funding, grants, incubation, and
+                acceleration.
+              </p>
+              <img
+                src="./img/support.webp"
+                alt="Lifetime Access"
+                class="mx-auto mt-4"
+              />
+            </div>
+
+            <!-- activity 3 -->
+            <div class="text-center p-6 border-r-4 rounded-lg shadow-sm">
+              <h3 class="font-bold text-lg">Skills Training</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Vocational training and apprenticeships.
+              </p>
+              <img
+                src="./img/skill.png"
+                alt="Customization"
+                class="mx-auto mt-4"
+              />
+            </div>
+
+            <!-- activity 4 -->
+            <div
+              class="text-center flex items-center justify-center p-6 rounded-lg shadow-sm"
+            >
+              <button
+                class="px-6 py-3 text-primary font-semibold rounded-lg shadow-md border-2 border-primary flex items-center gap-2 transition duration-300 hover:bg-secondary hover:text-white hover:border-transparent"
+              >
+                Check Programs
+                <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- eligibility -->
+      <section class="my-16">
+        <div class="flex flex-col items-center justify-center gap-4 mb-16">
+          <h1
+            class="text-xl lg:text-5xl font-bold text-secondary tracking-wide text-center capitalize"
+          >
+            <span class="text-3xl">•</span>
+            <span class="mx-2"></span>
+            <!-- Space between dot and text -->
+            want to know if ou are eligible
+            <span class="mx-2"></span>
+            <!-- Space between text and dot -->
+            <span class="text-3xl">•</span>
+          </h1>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 py-10 bg-primary rounded-2xl">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- activity 1 -->
+            <div
+              class="text-center p-6 bg-white border-2 border-secondary rounded-full shadow-sm flex flex-col items-center justify-center h-64 w-64 mx-auto"
+            >
+              <p class="font-bold text-lg text-gray-600 mt-2">
+                Brilliant but needy students
+              </p>
+            </div>
+
+            <!-- activity 2 -->
+            <div
+              class="text-center p-6 bg-white border-2 border-secondary rounded-full shadow-sm flex flex-col items-center justify-center h-64 w-64 mx-auto"
+            >
+              <p class="font-bold text-lg text-gray-600 mt-2">
+                Entrepreneurs and small business owners
+              </p>
+            </div>
+
+            <!-- activity 3 -->
+            <div
+              class="text-center flex items-center justify-center p-6 bg-white border-2 border-secondary rounded-full shadow-sm h-64 w-64 mx-auto"
+            >
+              <button
+                class="px-6 py-3 text-white font-semibold rounded-full shadow-md bg-primary flex items-center gap-2 transition duration-300 hover:bg-primary/80 hover:text-white hover:border-transparent group"
+              >
+                Check Programs
+                <!-- Heroicon: Arrow Right (without stick) -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5 group-hover:translate-x-3 transition-all duration-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Call to Action:support -->
+      <section>
+        <div
+          class="py-20 text-center bg-gradient-to-br from-primary to-secondary text-white"
+        >
+          <div class="max-w-4xl mx-auto px-6">
+            <!-- Heading -->
+            <h2 class="text-5xl font-bold mb-6">How to benefit?</h2>
+
+            <!-- Description -->
+            <p class="text-xl text-secondary2 font-medium mb-8">
+              If you meet the eligibility criteria, feel free to apply. We look
+              forward to supporting your journey toward success.
+            </p>
+
+            <!-- Button -->
+            <button
+              class="inline-flex items-center px-8 py-4 bg-secondary2 text-primary text-lg font-semibold rounded-full hover:bg-secondary hover:text-secondary2 transition-all duration-300 shadow-lg hover:shadow-xl capitalize"
+            >
+              <a href="#">apply now</a>
+              <svg
+                class="w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>
