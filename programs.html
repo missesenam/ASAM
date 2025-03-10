@@ -36,19 +36,162 @@
   <body>
     <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
     <main class="pt-[100px]">
+      <!-- hero -->
+      <section>
+        <div
+          class="relative w-full h-[80vh] border-b-[12px] border-primary rounded-b-[80px]"
+        >
+          <!-- Background Image -->
+          <img
+            src="/img/young-student-working-assignment.jpg"
+            alt="STEM Program"
+            class="w-full h-full shadow-lg object-cover object-top"
+          />
+
+          <!-- Overlay Content -->
+          <div
+            class="absolute bottom-10 left-10 bg-white p-6 rounded-lg shadow-lg max-w-md"
+          >
+            <h2 class="text-2xl font-bold text-gray-800">
+              ASAM Foundation Programs
+            </h2>
+            <p class="text-gray-600 text-sm mt-2">
+              ASAM is committed to empowering individuals through education,
+              business support, and skills training. Our programs include
+              scholarships, mentorship, and IT training, along with
+              entrepreneurship development and vocational apprenticeships.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- program activities -->
       <section>
         <div class="my-7">
           <h1
-            class="text-4xl sm:text-6xl lg:text-8xl font-normal text-center text-primary"
+            class="text-3xl sm:text-5xl lg:text-8xl font-normal text-center text-primary"
           >
-            Our Programs
+            Principal Activities
           </h1>
+        </div>
+        <!-- Activities here -->
+
+        <div class="relative p-6">
+          <!-- Background Div -->
+          <!-- one lines -->
+          <!-- <div
+            class="absolute inset-0 bg-secondary h-24 w-full mx-auto top-1/2 -translate-y-1/2 z-0"
+          ></div> -->
+          <!-- two lines -->
+          <div
+            class="absolute inset-0 z-0 w-full mx-auto flex flex-col justify-between py-32"
+          >
+            <div class="h-24 bg-secondary"></div>
+            <div class="h-24 bg-secondary"></div>
+          </div>
+          <!-- Activities Grid -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10"
+            id="activities"
+          >
+            <!-- Activity Cards will be dynamically inserted here -->
+          </div>
+        </div>
+      </section>
+      <!-- Eligibility Section -->
+      <section class="text-white">
+        <!-- eligibility -->
+        <div>
+          <div class="relative flex flex-col items-center my-12">
+            <span
+              class="absolute -top-3 left-1/2 transform -translate-x-1/2 px-4 bg-white text-sm text-gray-500"
+              >Learn About</span
+            >
+            <h1
+              class="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-accent to-secondary mb-2"
+            >
+              Eligibility & benefits Packages
+            </h1>
+            <div class="w-24 h-1 rounded-full bg-primary"></div>
+          </div>
+        </div>
+        <div class="bg-primary/80 py-6 px-6">
+          <div
+            class="max-w-5xl mx-auto h-[80vh] grid md:grid-cols-2 gap-10 items-center"
+          >
+            <!-- Left Section: Eligibility Content -->
+            <div
+              class="flex flex-col items-center text-center justify-center h-full"
+            >
+              <h2 class="text-3xl font-bold mb-6">Eligibility Criteria</h2>
+              <div id="eligibility"></div>
+              <a
+                href="#"
+                class="mt-6 inline-block bg-secondary2 text-primary font-semibold py-3 px-6 rounded-lg hover:bg-secondary transition duration-300 shadow-md hover:shadow-lg"
+              >
+                Apply Now
+              </a>
+            </div>
+            <!-- Right Section: Image -->
+            <div class="relative h-full">
+              <div
+                class="bg-white p-2 rounded-tr-[80px] overflow-hidden lg:w-[80%] h-full"
+              >
+                <img
+                  src="https://img.freepik.com/free-photo/portrait-rich-woman-indoors-with-book_23-2149548501.jpg?uid=R186422831&ga=GA1.1.1446437926.1730537078&semt=ais_hybrid"
+                  alt="Eligibility Image"
+                  class="w-full h-full object-cover rounded-tr-[80px]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Who Can Benefit? Section -->
+      <section class="bg-gray-50 py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-8">
+            Who Can Benefit?
+          </h2>
+          <ul class="list-disc list-inside space-y-4 text-lg text-gray-700">
+            <li>Junior High to Tertiary students</li>
+            <li>Young adults seeking vocational training or apprenticeships</li>
+            <li>
+              Entrepreneurs and small business owners needing funding or
+              mentorship
+            </li>
+            <li>Individuals requiring educational support or counseling</li>
+            <li>
+              Community groups and organizations aligned with ASAM Foundation’s
+              mission
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Benefit Packages Section -->
+      <section class="text-white">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-primary text-3xl font-bold mb-4">
+            <span class="text-secondary">WHO CAN</span> BENEFIT?
+          </h2>
+          <p class="text-text mb-8">
+            Our programs support students, young adults in vocational training,
+            entrepreneurs, individuals needing educational guidance, and
+            community groups aligned with our mission. If you're looking to
+            grow, learn, or build, ASAM Foundation is here for you.
+          </p>
+        </div>
+        <div class="bg-primary py-16 px-6">
+          <h2 class="text-3xl lg:text-4xl font-bold mb-8">Benefit Packages</h2>
+          <div id="benefits-container" class="max-w-4xl mx-auto"></div>
         </div>
       </section>
     </main>
     <!-- footerl -->
     <footer id="footer"></footer>
     <script src="./scriptFiles/script.js"></script>
-    <script src="scriptFiles/faqs.js"></script>
+    <script src="scriptFiles/activities.js"></script>
+    <script src="/scriptFiles/eligibility.js"></script>
+    <script src="./scriptFiles/benefits.js"></script>
   </body>
 </html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/logo/asam.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // taosd
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#05050a",
+              background: "#fbfbfe",
+              primary: "#092f3c",
+              secondary: "#f39530",
+              secondary2: "#cbd3d7",
+              accent: "#ffeace",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
+    <main class="pt-[100px]">
+      <!-- the application form with some additional options for male applicants -->
+      <section>
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg">
+          <!-- form banner -->
+          <div
+            class="h-[50vh] bg-[#A08C7D] flex items-center justify-between rounded-lg h-full px-4"
+          >
+            <!-- Text Section -->
+            <div class="text-white max-w-lg w-1/2">
+              <h2 class="text-2xl font-bold">
+                ASAM Foundation Skill Training Application Form
+              </h2>
+              <p class="mt-2 text-gray-200">Fill out the form below honestly</p>
+            </div>
+
+            <!-- Image Section -->
+            <div class="w-1/2">
+              <img
+                src="/img/happy-joyful-female-student-embracing-books-removebg-preview.png"
+                alt="Student holding books"
+                class="h-full w-full"
+              />
+            </div>
+          </div>
+          <form class="space-y-6 p-8">
+            <!-- Personal Information -->
+            <fieldset class="space-y-4">
+              <legend class="text-lg font-semibold">
+                Personal Information
+              </legend>
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="w-full p-3 border rounded-lg"
+              />
+              <input type="date" class="w-full p-3 border rounded-lg" />
+              <input
+                type="text"
+                placeholder="Contact Address"
+                class="w-full p-3 border rounded-lg"
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                class="w-full p-3 border rounded-lg"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="w-full p-3 border rounded-lg"
+              />
+            </fieldset>
+
+            <!-- Training Program -->
+            <fieldset class="space-y-4">
+              <legend class="text-lg font-semibold">Training Program</legend>
+              <select class="w-full p-3 border rounded-lg">
+                <option>Hair Dressing</option>
+                <option>Dress Making</option>
+                <option>Cosmetology</option>
+                <option>Fashion Design</option>
+                <option>Barbering</option>
+                <option>Automotive Repair</option>
+                <option>Carpentry</option>
+                <option>Electrical Work</option>
+                <option>Plumbing</option>
+                <option>Other</option>
+              </select>
+              <input
+                type="text"
+                placeholder="If Other, please specify"
+                class="w-full p-3 border rounded-lg"
+              />
+            </fieldset>
+
+            <!-- Previous Experience -->
+            <fieldset class="space-y-4">
+              <legend class="text-lg font-semibold">Previous Experience</legend>
+              <label class="flex items-center space-x-2">
+                <input type="radio" name="experience" class="w-5 h-5" />
+                <span>Yes</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="radio" name="experience" class="w-5 h-5" />
+                <span>No</span>
+              </label>
+              <textarea
+                placeholder="Describe your experience or relevant skills"
+                class="w-full p-3 border rounded-lg h-24"
+              ></textarea>
+            </fieldset>
+
+            <!-- Career Goals -->
+            <fieldset class="space-y-4">
+              <legend class="text-lg font-semibold">Career Goals</legend>
+              <textarea
+                placeholder="What are your career goals?"
+                class="w-full p-3 border rounded-lg h-24"
+              ></textarea>
+              <textarea
+                placeholder="How do you plan to use the skills?"
+                class="w-full p-3 border rounded-lg h-24"
+              ></textarea>
+            </fieldset>
+
+            <!-- Education -->
+            <fieldset class="space-y-4">
+              <legend class="text-lg font-semibold">Education</legend>
+              <input
+                type="text"
+                placeholder="Highest level of education completed"
+                class="w-full p-3 border rounded-lg"
+              />
+              <input
+                type="text"
+                placeholder="Institution attended"
+                class="w-full p-3 border rounded-lg"
+              />
+            </fieldset>
+
+            <!-- References -->
+            <fieldset class="space-y-4">
+              <legend class="text-lg font-semibold">References</legend>
+              <input
+                type="text"
+                placeholder="Reference 1 (Name & Contact)"
+                class="w-full p-3 border rounded-lg"
+              />
+              <input
+                type="text"
+                placeholder="Reference 2 (Name & Contact)"
+                class="w-full p-3 border rounded-lg"
+              />
+            </fieldset>
+
+            <!-- Declaration -->
+            <fieldset class="space-y-4">
+              <legend class="text-lg font-semibold">Declaration</legend>
+              <p class="text-sm text-gray-600">
+                I declare that the information provided is true and accurate. I
+                understand that ASAM Foundation will use this information for
+                assessment.
+              </p>
+              <input
+                type="text"
+                placeholder="Signature"
+                class="w-full p-3 border rounded-lg"
+              />
+              <input type="date" class="w-full p-3 border rounded-lg" />
+            </fieldset>
+
+            <!-- Additional Documents -->
+            <fieldset class="space-y-4">
+              <legend class="text-lg font-semibold">
+                Additional Documents
+              </legend>
+              <input type="file" class="w-full p-3 border rounded-lg" />
+              <input type="file" class="w-full p-3 border rounded-lg" />
+              <input type="file" class="w-full p-3 border rounded-lg" />
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button
+              class="w-full bg-primary text-white font-semibold py-3 rounded-lg hover:bg-secondary transition"
+            >
+              Submit Application
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footerl -->
+    <footer id="footer"></footer>
+    <script src="./scriptFiles/script.js"></script>
+    <script src="./scriptFiles/contact.js"></script>
+  </body>
+</html>

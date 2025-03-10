@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/logo/asam.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // taosd
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#05050a",
+              background: "#fbfbfe",
+              primary: "#092f3c",
+              secondary: "#f39530",
+              secondary2: "#cbd3d7",
+              accent: "#ffeace",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
+    <main class="pt-[100px]">
+      <!--  -->
+      <!-- ASAM Foundation Application Form -->
+      <section>
+        <div class="bg-gray-50 py-12 px-6">
+          <div
+            class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg border-8 border-primary"
+          >
+            <!-- form banner -->
+            <div
+              class="h-[50vh] bg-[#A08C7D] flex items-center justify-between rounded-lg h-full px-4"
+            >
+              <!-- Text Section -->
+              <div class="text-white max-w-lg w-1/2">
+                <h2 class="text-2xl font-bold">ASAM Application form</h2>
+                <p class="mt-2 text-gray-200">
+                  Fill out the form below honestly
+                </p>
+              </div>
+
+              <!-- Image Section -->
+              <div class="w-1/2">
+                <img
+                  src="/img/happy-joyful-female-student-embracing-books-removebg-preview.png"
+                  alt="Student holding books"
+                  class="h-full w-full"
+                />
+              </div>
+            </div>
+
+            <form action="" class="space-y-6 p-8">
+              <!-- Section 1: Personal Information -->
+              <div class="mb-8">
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Section 1: Personal Information
+                </h3>
+                <div class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter your full name"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Date of Birth</label
+                    >
+                    <input
+                      type="date"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Contact Address</label
+                    >
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter your contact address"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 2: Educational Background -->
+              <div class="mb-8">
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Section 2: Educational Background
+                </h3>
+                <div class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Highest Level of Education</label
+                    >
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter your highest level of education"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Institution Attended</label
+                    >
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter the institution you attended"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Course of Study</label
+                    >
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter your course of study"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Dates of Attendance</label
+                    >
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter the dates of attendance"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 3: Program Interest -->
+              <div class="mb-8">
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Section 3: Program Interest
+                </h3>
+                <div class="space-y-4">
+                  <label class="block text-sm font-medium text-gray-700"
+                    >Which ASAM Foundation program are you interested in?</label
+                  >
+                  <div class="space-y-2">
+                    <label class="flex items-center">
+                      <input
+                        type="radio"
+                        name="program"
+                        class="form-radio text-accent focus:ring-accent"
+                      />
+                      <span class="ml-2">Education Support</span>
+                    </label>
+                    <label class="flex items-center">
+                      <input
+                        type="radio"
+                        name="program"
+                        class="form-radio text-accent focus:ring-accent"
+                      />
+                      <span class="ml-2">Entrepreneurship Training</span>
+                    </label>
+                    <label class="flex items-center">
+                      <input
+                        type="radio"
+                        name="program"
+                        class="form-radio text-accent focus:ring-accent"
+                      />
+                      <span class="ml-2">Skills Development</span>
+                    </label>
+                    <label class="flex items-center">
+                      <input
+                        type="radio"
+                        name="program"
+                        class="form-radio text-accent focus:ring-accent"
+                      />
+                      <span class="ml-2">Other (please specify)</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Specify other program"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 4: Financial Information -->
+              <div class="mb-8">
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Section 4: Financial Information
+                </h3>
+                <div class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >What is your current income level?</label
+                    >
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter your income level"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Do you have any dependents?</label
+                    >
+                    <div class="flex space-x-4">
+                      <label class="flex items-center">
+                        <input
+                          type="radio"
+                          name="dependents"
+                          class="form-radio text-accent focus:ring-accent"
+                        />
+                        <span class="ml-2">Yes</span>
+                      </label>
+                      <label class="flex items-center">
+                        <input
+                          type="radio"
+                          name="dependents"
+                          class="form-radio text-accent focus:ring-accent"
+                        />
+                        <span class="ml-2">No</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >If yes, how many?</label
+                    >
+                    <input
+                      type="number"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter the number of dependents"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 5: Essay Question -->
+              <div class="mb-8">
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Section 5: Essay Question
+                </h3>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700"
+                    >What are your goals and aspirations, and how do you think
+                    the ASAM Foundation can help you achieve them?</label
+                  >
+                  <textarea
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200 h-32"
+                    placeholder="Write your response here (500 words or less)"
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- Section 6: References -->
+              <div class="mb-8">
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Section 6: References
+                </h3>
+                <div class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Reference 1</label
+                    >
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter name and contact information"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700"
+                      >Reference 2</label
+                    >
+                    <input
+                      type="text"
+                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                      placeholder="Enter name and contact information"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Section 7: Declaration -->
+              <div class="mb-8">
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Section 7: Declaration
+                </h3>
+                <div class="space-y-4">
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="form-checkbox text-accent focus:ring-accent"
+                    />
+                    <span class="ml-2"
+                      >I declare that the information provided in this
+                      application is true and accurate to the best of my
+                      knowledge.</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="form-checkbox text-accent focus:ring-accent"
+                    />
+                    <span class="ml-2"
+                      >I understand that the ASAM Foundation will use this
+                      information to assess my eligibility for its
+                      programs.</span
+                    >
+                  </label>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="form-checkbox text-accent focus:ring-accent"
+                    />
+                    <span class="ml-2"
+                      >I agree to abide by the rules and regulations of the ASAM
+                      Foundation.</span
+                    >
+                  </label>
+                </div>
+                <div class="mt-6">
+                  <label class="block text-sm font-medium text-gray-700"
+                    >Signature</label
+                  >
+                  <input
+                    type="text"
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                    placeholder="Enter your signature"
+                  />
+                </div>
+                <div class="mt-4">
+                  <label class="block text-sm font-medium text-gray-700"
+                    >Date</label
+                  >
+                  <input
+                    type="date"
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition duration-200"
+                  />
+                </div>
+              </div>
+
+              <!-- Additional Documents -->
+              <div>
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Additional Documents
+                </h3>
+                <p class="text-sm text-gray-600">
+                  Please attach the following documents to your application:
+                </p>
+                <ul class="list-disc list-inside text-sm text-gray-700 mt-2">
+                  <li>Copy of ID (e.g. passport, driver's license)</li>
+                  <li>Copy of academic transcripts or certificates</li>
+                  <li>Proof of income (e.g. pay slip, bank statement)</li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footerl -->
+    <footer id="footer"></footer>
+    <script src="./scriptFiles/script.js"></script>
+    <script src="./scriptFiles/contact.js"></script>
+  </body>
+</html>

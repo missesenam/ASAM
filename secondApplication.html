@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/logo/asam.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // taosd
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#05050a",
+              background: "#fbfbfe",
+              primary: "#092f3c",
+              secondary: "#f39530",
+              secondary2: "#cbd3d7",
+              accent: "#ffeace",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="z-[1000] fixed w-full bg-background" id="navbar"></nav>
+    <main class="pt-[100px]">
+      <!-- ASAM Foundation Entrepreneurship Support Application -->
+      <section>
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg">
+          <!-- form banner -->
+          <div
+            class="h-[50vh] bg-[#A08C7D] flex items-center justify-between rounded-lg h-full px-4"
+          >
+            <!-- Text Section -->
+            <div class="text-white max-w-lg w-1/2">
+              <h2 class="text-2xl font-bold">
+                ASAM Foundation Entrepreneurship Support Application
+              </h2>
+              <p class="mt-2 text-gray-200">Fill out the form below honestly</p>
+            </div>
+
+            <!-- Image Section -->
+            <div class="w-1/2">
+              <img
+                src="/img/happy-joyful-female-student-embracing-books-removebg-preview.png"
+                alt="Student holding books"
+                class="h-full w-full"
+              />
+            </div>
+          </div>
+
+          <!-- Business Information -->
+
+          <form action="" class="space-y-6 p-8">
+            <h2 class="text-xl font-semibold text-gray-700 mt-6">
+              Section 1: Business Information
+            </h2>
+            <label class="block mt-2">Business Name</label>
+            <input type="text" class="w-full border p-2 rounded" />
+
+            <label class="block mt-2">Business Type</label>
+            <input type="text" class="w-full border p-2 rounded" />
+
+            <label class="block mt-2">Business Address</label>
+            <input type="text" class="w-full border p-2 rounded" />
+
+            <label class="block mt-2">Phone Number</label>
+            <input type="tel" class="w-full border p-2 rounded" />
+
+            <label class="block mt-2">Email Address</label>
+            <input type="email" class="w-full border p-2 rounded" />
+
+            <!-- Business Idea -->
+            <h2 class="text-xl font-semibold text-gray-700 mt-6">
+              Section 2: Business Idea
+            </h2>
+            <label class="block mt-2">Describe your business idea</label>
+            <textarea class="w-full border p-2 rounded h-24"></textarea>
+
+            <label class="block mt-2"
+              >What problem does your business solve?</label
+            >
+            <textarea class="w-full border p-2 rounded h-16"></textarea>
+
+            <label class="block mt-2"
+              >What products or services will you offer?</label
+            >
+            <textarea class="w-full border p-2 rounded h-16"></textarea>
+
+            <label class="block mt-2">Who is your target market?</label>
+            <textarea class="w-full border p-2 rounded h-16"></textarea>
+
+            <!-- Business Plan -->
+            <h2 class="text-xl font-semibold text-gray-700 mt-6">
+              Section 3: Business Plan
+            </h2>
+            <label class="block mt-2"
+              >Do you have a written business plan?</label
+            >
+            <div class="flex gap-4">
+              <label
+                ><input type="radio" name="business_plan" value="yes" />
+                Yes</label
+              >
+              <label
+                ><input type="radio" name="business_plan" value="no" />
+                No</label
+              >
+            </div>
+
+            <label class="block mt-2">If no, outline your business plan</label>
+            <textarea class="w-full border p-2 rounded h-24"></textarea>
+
+            <!-- Financial Information -->
+            <h2 class="text-xl font-semibold text-gray-700 mt-6">
+              Section 4: Financial Information
+            </h2>
+            <label class="block mt-2">Current Annual Revenue</label>
+            <input type="text" class="w-full border p-2 rounded" />
+
+            <label class="block mt-2"
+              >Projected Annual Revenue for Next 3 Years</label
+            >
+            <input type="text" class="w-full border p-2 rounded" />
+
+            <label class="block mt-2"
+              >Funding Sought from ASAM Foundation</label
+            >
+            <input type="text" class="w-full border p-2 rounded" />
+
+            <label class="block mt-2">How will you use the funding?</label>
+            <textarea class="w-full border p-2 rounded h-16"></textarea>
+
+            <!-- Entrepreneurial Experience -->
+            <h2 class="text-xl font-semibold text-gray-700 mt-6">
+              Section 5: Entrepreneurial Experience
+            </h2>
+            <label class="block mt-2"
+              >Do you have prior entrepreneurial experience?</label
+            >
+            <div class="flex gap-4">
+              <label
+                ><input type="radio" name="experience" value="yes" /> Yes</label
+              >
+              <label
+                ><input type="radio" name="experience" value="no" /> No</label
+              >
+            </div>
+
+            <label class="block mt-2">If yes, describe your experience</label>
+            <textarea class="w-full border p-2 rounded h-16"></textarea>
+
+            <label class="block mt-2"
+              >If no, outline relevant skills or training</label
+            >
+            <textarea class="w-full border p-2 rounded h-16"></textarea>
+
+            <!-- References -->
+            <h2 class="text-xl font-semibold text-gray-700 mt-6">
+              Section 6: References
+            </h2>
+            <label class="block mt-2">Reference 1</label>
+            <input type="text" class="w-full border p-2 rounded" />
+
+            <label class="block mt-2">Reference 2</label>
+            <input type="text" class="w-full border p-2 rounded" />
+
+            <!-- Declaration -->
+            <h2 class="text-xl font-semibold text-gray-700 mt-6">
+              Section 7: Declaration
+            </h2>
+            <p class="text-gray-600 mt-2">
+              I declare that the information provided in this application is
+              true and accurate to the best of my knowledge.
+            </p>
+            <p class="text-gray-600">
+              I understand that the ASAM Foundation will use this information to
+              assess my eligibility for entrepreneurship support.
+            </p>
+            <p class="text-gray-600">
+              I agree to abide by the rules and regulations of the ASAM
+              Foundation.
+            </p>
+
+            <label class="block mt-2">Signature</label>
+            <input type="text" class="w-full border p-2 rounded" />
+
+            <label class="block mt-2">Date</label>
+            <input type="date" class="w-full border p-2 rounded" />
+
+            <!-- Submit Button -->
+            <button
+              class="w-full bg-blue-600 text-white font-semibold py-2 px-4 mt-6 rounded hover:bg-blue-700"
+            >
+              Submit Application
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footerl -->
+    <footer id="footer"></footer>
+    <script src="./scriptFiles/script.js"></script>
+    <script src="./scriptFiles/contact.js"></script>
+  </body>
+</html>

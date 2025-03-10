@@ -54,8 +54,8 @@ benefits.forEach((benefit) => {
   } items-center gap-6 mb-8 pb-2 border-b-2 border-secondary">
 ${benefit.icon}
     <div class="${benefit.alignRight ? "text-right ml-auto" : ""}">
-      <h3 class="${benefit.color} text-xl font-semibold">${benefit.title}</h3>
-      <p class="text-text mt-2">${benefit.description}</p>
+      <h3 class="text-accent text-xl font-semibold">${benefit.title}</h3>
+      <p class="text-white mt-2">${benefit.description}</p>
     </div>
   </div>
 `;

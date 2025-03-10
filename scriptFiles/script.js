@@ -227,3 +227,28 @@ footerElement.innerHTML = `<div  class="footer bg-primary text-white p-10 mt-8">
         </div>
       </nav>
       </div>`;
+
+// Get modal and button elements
+const modal = document.getElementById("modal");
+const openModalButton = document.getElementById("open-modal");
+const closeModalButton = document.getElementById("close-modal");
+
+// Open modal when button is clicked
+openModalButton.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+});
+
+// Close modal when close button is clicked
+closeModalButton.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+});
+
+// Close modal when clicking outside the form
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  }
+});
